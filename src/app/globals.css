@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fdf8f9;
+  --foreground: #2d2a26;
+  --accent: #d4237a;
+  --accent-hover: #b81e68;
+  --card-bg: #ffffff;
+  --card-border: #f0dde5;
+  --sidebar-bg: #faf0f3;
+  --input-bg: #ffffff;
+  --input-border: #e8d0d8;
+  --badge-high: #d4237a;
+  --badge-moderate: #d4a03c;
+  --badge-emerging: #7bc4a8;
+  --knowledge-bg: #f0faf5;
+  --knowledge-text: #2d2a26;
+  --angle-selected: #d4237a;
+  --mint: #7bc4a8;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--sidebar-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: #c4bfb6;
+  border-radius: 3px;
+}
+
+/* Smooth transitions */
+* {
+  transition-property: background-color, border-color, color, opacity;
+  transition-duration: 150ms;
+}
